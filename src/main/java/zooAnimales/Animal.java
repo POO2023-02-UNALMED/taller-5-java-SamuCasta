@@ -4,12 +4,12 @@ import gestion.Zona;
 
 public class Animal {
 	
-	protected static int totalAnimales = 0;
+	int totalAnimales = 0;
 	private String nombre;
 	private int edad;
 	private String habitat;
 	private String genero;
-	private Zona zona;
+	private Zona[] zona;
 	
 	public Animal(){
 		totalAnimales++;

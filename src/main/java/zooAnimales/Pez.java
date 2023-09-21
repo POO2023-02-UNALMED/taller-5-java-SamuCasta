@@ -1,10 +1,11 @@
 package zooAnimales;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Pez extends Animal{
 	
-	private static ArrayList<Pez> lista = new ArrayList<Pez>();
+	private static List<Pez> lista = new ArrayList<Pez>();
 	private static Pez[] listado;
 	public static int salmones;
 	public static int bacalaos;

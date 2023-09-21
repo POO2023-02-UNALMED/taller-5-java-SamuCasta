@@ -1,10 +1,11 @@
 package zooAnimales;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Ave extends Animal {
 	
-	private static ArrayList<Ave> lista = new ArrayList<Ave>();
+	private static List<Ave> lista = new ArrayList<Ave>();
 	private static Ave[] listado;
 	public static int halcones;
 	public static int aguilas;
