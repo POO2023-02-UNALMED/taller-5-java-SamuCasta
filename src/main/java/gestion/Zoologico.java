@@ -23,19 +23,16 @@ public class Zoologico {
             zonass.add(NuevaZona); 
 	}
         
-        public int cantidadTotalAnimales() {
-            int totalAnimales = 0;
-            for (Zona i : zonas) {
-                totalAnimales += i.cantidadAnimales();
-            }
-            return totalAnimales;
-        }
+        public int cantidadTotalAnimales(){
+            int total=0;
+            for(int i=0; i<zonass.size(); i++){total+=zonass.get(i).cantidadAnimales();}
+            return total;}
         
         public String getNombre(){
         	return nombre;
         	}
-        public String getUbicacion()
-        {return ubicacion;
+        public String getUbicacion(){
+        	return ubicacion;
         }
         public List<Zona> getZona(){
         	return zonass;
