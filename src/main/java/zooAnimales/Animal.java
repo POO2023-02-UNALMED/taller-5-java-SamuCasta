@@ -31,17 +31,11 @@ public class Animal {
 	    else return "desplazarse";
 	  }
 	
-	public static String totalPorTipo() {
-		return "Mamiferos:" + Mamifero.cantidadMamiferos() + 
-				"\nAves:" + Ave.cantidadAves() +
-				"\nReptiles:" + Reptil.cantidadReptiles() + 
-				"\nPeces:" + Pez.cantidadPeces() + 
-				"\nAnfibios:" + Anfibio.cantidadAnfibios();
-	}
+	public static String totalPorTipo(){return "Mamiferos: "+Mamifero.cantidadMamiferos()+"\n" + "Aves: "+Ave.cantidadAves()+"\n" + "Reptiles: "+Reptil.cantidadReptiles()+"\n" + "Peces: "+Pez.cantidadPeces()+"\n" + "Anfibios: "+Anfibio.cantidadAnfibios();}
+	
 	
 	public String toString(){
-		return "Mi nombre es "+this.nombre+", tengo una edad de " +this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero+
-				"la zona en la que me ubico es "+ this.zona.getNombre() + ", en el " + this.zona.getZoo().getNombre();
+		return "Mi nombre es "+this.nombre+", tengo una edad de " +this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero;
 		}
 	
 	  public String getGenero() {
